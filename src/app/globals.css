@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'PPGoshaSans';
+  src: url('/fonts/PPGoshaSans-Bold.otf') format('opentype'); /* Add the new font */
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -17,17 +22,20 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: 'Gosha', Gosha;
+  background-color: rgb(188, 188, 188);
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+p{
+  font-family: 'Gosha';
+}
+
+h1, h2{
+  font-family: 'Gosha';
 }
